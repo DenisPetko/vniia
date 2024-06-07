@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: test
+    password: test
+  liquibase:
+    change-log: /db/changelog/db.changelog-master.yml
+
+
+
+

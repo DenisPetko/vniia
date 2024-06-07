@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/init/init_db.yml
+
+  - changeSet:
+      id: create_tables
+      author: Denis
+      comment: Создание таблиц Master и Detail
+      changes:
+        - sqlFile:
+            path: create_tables.sql
+            relativeToChangelogFile: true
+      rollback:
+        - sqlFile:
+            path: drop_tables.sql
+            relativeToChangelogFile: true

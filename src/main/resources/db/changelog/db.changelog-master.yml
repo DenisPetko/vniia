@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: init/init_db.yml
+      relativeToChangelogFile: true
+

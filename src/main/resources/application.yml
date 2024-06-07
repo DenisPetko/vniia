@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: testApp
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vniia
+    username: postgres
+    password: DenP7641
+    hikari:
+      pool-name: test-app-pool
+      auto-commit: false
+      idle-timeout: 10000
+      minimum-idle: 0
+      maximum-pool-size: 10
+  liquibase:
+    liquibase-schema: public
+    change-log: /db/changelog/db.changelog-master.yml
+  jpa:
+    show-sql: true
+
+
+
+
